@@ -1,7 +1,7 @@
 from github import Github
 import json
 
-repos = ['rstudio/shiny']
+repos = ['rstudio/shiny'] #owner and repo name 
 
 d = {
     "repos" : {}
@@ -35,5 +35,5 @@ for repo_name in repos:
 
 print(d)
 
-with open('data.json', 'w') as outfile:
+with open('data_github.json', 'w') as outfile:
     json.dump(d, outfile)

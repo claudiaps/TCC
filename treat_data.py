@@ -5,6 +5,12 @@ import json
 import os
 import copy
 import io
+from datetime import datetime
+
+
+def diff_month(d1, d2):
+    return (d1.year - d2.year) * 12 + d1.month - d2.month
+
 
 processed_data = []
 
@@ -23,45 +29,36 @@ def getLabels():
 
 def create_aux():
     for issue in data['repos']['rstudio/shiny']['issues']:
-        if(len(issue['labels'])>0):
+        if(len(issue['labels']) > 0):
             created_date = issue['created_at']
             closed_date = issue['closed_at']
             created_year = int(created_date[:4])
-            closed_year = 0
-            closed_month = 0
+            created_month = int(created_date[5: - (len(created_date)-7)])
             if(closed_date):
                 closed_year = int(closed_date[:4])
                 closed_month = int(closed_date[5: - (len(created_date)-7)])
-            created_month = int(created_date[5: - (len(created_date)-7)])
-            years = closed_year-created_year
-            months = closed_month-created_month
+            else:
+                closed_year = datetime.now().year
+                closed_month = datetime.now().month
+            months = diff_month(datetime(closed_year, closed_month, 1), datetime(
+                created_year, created_month, 1))
             for label in issue['labels']:
-                if(years < 0):
-                    pass
-                    dict_label= {
+                # print(label)
+                m = created_month
+                y = created_year
+                for i in range(0, months+1):
+                    if(m > 12):
+                        m = 1
+                        y = created_year + 1
+                    dict_label = {
                         'name': label,
-                        'year': created_year,
-                        'month': created_month,
-                        'quant': 1
+                        'year': y,
+                        'month': m,
+                        'qtd': 1
                     }
+                    m +=1
                     processed_data.append(dict_label)
-                elif (years == 0):
-                    qtd = 1
-                    for m in range(created_month, closed_month+1):
-                        dict_label = {
-                            'name': label,
-                            'year': created_year,
-                            'month': m,
-                            'quant': qtd
-                        }
-                        processed_data.append(dict_label)   
-                        qtd+=1 
-                else:
-                    
-            
-
-        # print(processed_data)
-
+    print(processed_data)
 
 def populate_sheet():
     year = []
