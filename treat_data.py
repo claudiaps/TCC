@@ -12,9 +12,7 @@ def diff_month(d1, d2):
     return (d1.year - d2.year) * 12 + d1.month - d2.month
 
 
-processed_data = []
-
-with open('data.json') as f:
+with open('teste_data.json') as f:
     data = json.load(f)
 
 
@@ -28,6 +26,7 @@ def getLabels():
 
 
 def create_aux():
+    processed_data = []
     for issue in data['repos']['rstudio/shiny']['issues']:
         if(len(issue['labels']) > 0):
             created_date = issue['created_at']
@@ -43,7 +42,6 @@ def create_aux():
             months = diff_month(datetime(closed_year, closed_month, 1), datetime(
                 created_year, created_month, 1))
             for label in issue['labels']:
-                # print(label)
                 m = created_month
                 y = created_year
                 for i in range(0, months+1):
@@ -54,11 +52,27 @@ def create_aux():
                         'name': label,
                         'year': y,
                         'month': m,
-                        'qtd': 1
+                        'qtd': 0
                     }
                     m +=1
                     processed_data.append(dict_label)
-    print(processed_data)
+    # print(processed_data)
+    return processed_data
+
+def join_qtd(processed_data):
+    processed_data_with_qtd = []
+    for label in processed_data:
+        if label not in processed_data_with_qtd:
+            processed_data_with_qtd.append(label)
+    for label in processed_data:
+        for l in processed_data_with_qtd:
+            if(l['name'] == label['name'] and l['year'] == label['year'] and l['month'] == label['month']):
+                l['qtd'] += 1
+    # for l in processed_data_with_qtd:
+    #     l['qtd'] -=1
+
+    print(processed_data_with_qtd)
+
 
 def populate_sheet():
     year = []
@@ -69,4 +83,5 @@ def populate_sheet():
     year.sort()
 
 
-create_aux()
+p = create_aux()
+join_qtd(p)

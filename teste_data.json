@@ -1,0 +1,83 @@
+{
+    "repos": {
+        "rstudio/shiny": {
+            "issues": [
+                {
+                    "name": "Fix #2348, #2329, #1817: bugs triggered by networkD3 sankey plot ",
+                    "id": 2361,
+                    "user": "alandipert",
+                    "labels": [
+                        "teste1",
+                        "teste2"
+                    ],
+                    "created_at": "2019-03-27T03:48:55Z",
+                    "closed_at": null
+                },
+                {
+                    "name": "Fix #2348, #2329, #1817: bugs triggered by networkD3 sankey plot ",
+                    "id": 2361,
+                    "user": "alandipert",
+                    "labels": [
+                        "teste1",
+                        "teste2"
+                    ],
+                    "created_at": "2019-03-27T03:48:55Z",
+                    "closed_at": null
+                },
+                {
+                    "name": "Restore intuitive bookmarking behavior",
+                    "id": 2360,
+                    "user": "alandipert",
+                    "labels": [
+                        "teste1",
+                        "teste2"
+                    ],
+                    "created_at": "2019-03-25T18:53:04Z",
+                    "closed_at": "2019-03-26T20:08:35Z"
+                },
+                {
+                    "name": "Restore intuitive bookmarking behavior",
+                    "id": 2360,
+                    "user": "alandipert",
+                    "labels": [
+                        "teste1",
+                        "teste2"
+                    ],
+                    "created_at": "2019-03-25T18:53:04Z",
+                    "closed_at": "2019-03-26T20:08:35Z"
+                },
+                {
+                    "name": "Fix datepicker network d3",
+                    "id": 2358,
+                    "user": "alandipert",
+                    "labels": [],
+                    "created_at": "2019-03-21T23:22:21Z",
+                    "closed_at": "2019-03-21T23:28:02Z"
+                },
+                {
+                    "name": "The \"filename\" argument of \"downloadHandler\" has no effect in rstudio's integrated browser",
+                    "id": 2357,
+                    "user": "MarcSousbie",
+                    "labels": [
+                        "Invalid"
+                    ],
+                    "created_at": "2019-03-21T10:38:21Z",
+                    "closed_at": "2019-03-21T18:33:23Z"
+                },
+                {
+                    "name": "When error happens in global.R, the console error message says \"Error in ..stacktraceon..({ \"",
+                    "id": 2356,
+                    "user": "daattali",
+                    "labels": [
+                        "Difficulty: Intermediate",
+                        "Effort: Low",
+                        "Priority: Low",
+                        "Type: Enhancement"
+                    ],
+                    "created_at": "2019-03-21T01:18:27Z",
+                    "closed_at": null
+                }
+            ]
+        }
+    }
+}
