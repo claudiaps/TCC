@@ -3,12 +3,44 @@
         "rstudio/shiny": {
             "issues": [
                 {
+                    "name": "Feature request: make reactiveFileReader work with a reactive file path",
+                    "id": 2365,
+                    "user": "daattali",
+                    "labels": [],
+                    "created_at": "2019-03-30T19:03:50Z",
+                    "closed_at": null
+                },
+                {
+                    "name": "minor documentation typo fix",
+                    "id": 2364,
+                    "user": "mnazarov",
+                    "labels": [],
+                    "created_at": "2019-03-29T16:05:21Z",
+                    "closed_at": null
+                },
+                {
+                    "name": "Can't upload multiple files in shiny if use Rstudio ",
+                    "id": 2363,
+                    "user": "jasonzhao0307",
+                    "labels": [],
+                    "created_at": "2019-03-28T17:02:07Z",
+                    "closed_at": "2019-03-28T17:02:58Z"
+                },
+                {
+                    "name": "A very annoying bug: can't upload multiple files in shiny if I use rstudio browser",
+                    "id": 2362,
+                    "user": "jasonzhao0307",
+                    "labels": [],
+                    "created_at": "2019-03-28T00:40:40Z",
+                    "closed_at": "2019-03-28T15:17:02Z"
+                },
+                {
                     "name": "Fix #2348, #2329, #1817: bugs triggered by networkD3 sankey plot ",
                     "id": 2361,
                     "user": "alandipert",
                     "labels": [],
                     "created_at": "2019-03-27T03:48:55Z",
-                    "closed_at": null
+                    "closed_at": "2019-03-27T18:40:15Z"
                 },
                 {
                     "name": "Restore intuitive bookmarking behavior",
@@ -365,7 +397,11 @@
                     "name": "Possible memory leak reactiveFileReader",
                     "id": 2321,
                     "user": "RichardHooijmaijers",
-                    "labels": [],
+                    "labels": [
+                        "Difficulty: Advanced",
+                        "Priority: Medium",
+                        "Type: Bug"
+                    ],
                     "created_at": "2019-02-06T09:35:00Z",
                     "closed_at": null
                 },
@@ -429,7 +465,9 @@
                     "name": "Please upgrade the 'shiny' package to (at least) version 1.1",
                     "id": 2313,
                     "user": "hafizan",
-                    "labels": [],
+                    "labels": [
+                        "Type: Question"
+                    ],
                     "created_at": "2019-01-29T09:09:22Z",
                     "closed_at": null
                 },
@@ -439,7 +477,7 @@
                     "user": "rvernica",
                     "labels": [],
                     "created_at": "2019-01-25T22:14:12Z",
-                    "closed_at": null
+                    "closed_at": "2019-03-30T07:32:31Z"
                 },
                 {
                     "name": "Bookmarking: restore inputs that have a leading dot",
@@ -545,15 +583,24 @@
                     "name": "ReferenceError: Can't find variable: Shiny",
                     "id": 2298,
                     "user": "AgazW",
-                    "labels": [],
+                    "labels": [
+                        "Type: Question",
+                        "Type: Shiny Server"
+                    ],
                     "created_at": "2019-01-10T07:55:47Z",
-                    "closed_at": null
+                    "closed_at": "2019-03-30T08:03:54Z"
                 },
                 {
                     "name": "Bookmarking: unnecessarily unrecoverable error when query string contains more params than expected",
                     "id": 2297,
                     "user": "daattali",
-                    "labels": [],
+                    "labels": [
+                        "Difficulty: Intermediate",
+                        "Effort: Low",
+                        "Feature: Bookmarking",
+                        "Priority: Low",
+                        "Type: Enhancement"
+                    ],
                     "created_at": "2019-01-09T04:41:45Z",
                     "closed_at": null
                 },
@@ -577,7 +624,11 @@
                     "name": "FR: define \"upload complete\" message for fileInput",
                     "id": 2294,
                     "user": "fabiangehring",
-                    "labels": [],
+                    "labels": [
+                        "Effort: Low",
+                        "Priority: Low",
+                        "Type: Enhancement"
+                    ],
                     "created_at": "2019-01-03T14:39:39Z",
                     "closed_at": null
                 },
@@ -609,9 +660,11 @@
                     "name": "remove zip uploaded files from shiny",
                     "id": 2290,
                     "user": "LuisCanoA",
-                    "labels": [],
+                    "labels": [
+                        "Type: Question"
+                    ],
                     "created_at": "2018-12-25T21:18:01Z",
-                    "closed_at": null
+                    "closed_at": "2019-03-30T08:06:11Z"
                 },
                 {
                     "name": "updateSliderInput throws \"Error in [[: subscript out of bounds\" if neither 'min', 'max' or 'value' are passed in the function call (e.g. you only want to update 'step')",
@@ -633,9 +686,11 @@
                     "name": "Complaint when running built-in example",
                     "id": 2287,
                     "user": "gvwilson",
-                    "labels": [],
+                    "labels": [
+                        "Type: Question"
+                    ],
                     "created_at": "2018-12-18T15:30:43Z",
-                    "closed_at": null
+                    "closed_at": "2019-03-30T07:41:04Z"
                 },
                 {
                     "name": "Plot tooltips on hover are unstable when using `coords_css`",
@@ -721,9 +776,12 @@
                     "name": "renderTable `align` parameter check fails although input is valid",
                     "id": 2276,
                     "user": "dirkschumacher",
-                    "labels": [],
+                    "labels": [
+                        "Docs",
+                        "Type: Question"
+                    ],
                     "created_at": "2018-11-30T15:46:36Z",
-                    "closed_at": null
+                    "closed_at": "2019-03-30T07:47:09Z"
                 },
                 {
                     "name": "Cannot install shiny (1.2.0) with R 3.3.x",
@@ -753,7 +811,11 @@
                     "name": "Feature request: withProgress returns expression when there is no reactive domain",
                     "id": 2272,
                     "user": "vnijs",
-                    "labels": [],
+                    "labels": [
+                        "Effort: Low",
+                        "Priority: Low",
+                        "Type: Enhancement"
+                    ],
                     "created_at": "2018-11-27T03:32:40Z",
                     "closed_at": null
                 },
@@ -777,9 +839,11 @@
                     "name": "Is there a way to update a graph without recreating it.",
                     "id": 2269,
                     "user": "vikram-rawat",
-                    "labels": [],
+                    "labels": [
+                        "Type: Question"
+                    ],
                     "created_at": "2018-11-23T14:58:22Z",
-                    "closed_at": null
+                    "closed_at": "2019-03-30T07:52:47Z"
                 },
                 {
                     "name": "Add support for FontAwesome 5 font styles (fas, far, fal & fab)",
@@ -1719,7 +1783,7 @@
                     "user": "zuzuzuzz",
                     "labels": [],
                     "created_at": "2018-08-13T17:33:08Z",
-                    "closed_at": null
+                    "closed_at": "2019-03-30T08:10:39Z"
                 },
                 {
                     "name": "dateRangeInput max value can be off by one in Chrome",

@@ -1,30 +1,17 @@
 # -*- coding: UTF-8 -*-
 
-import csv
 import json
-import os
-import copy
-import io
 from datetime import datetime
 
+#open json file
+with open('../data/data_github.json') as f:
+    data = json.load(f)
 
+#find the months between two dates
 def diff_month(d1, d2):
     return (d1.year - d2.year) * 12 + d1.month - d2.month
 
-
-with open('teste_data.json') as f:
-    data = json.load(f)
-
-
-def getLabels():
-    labels_list = []
-    for issues in data['repos']['rstudio/shiny']['issues']:
-        for label in issues['labels']:
-            if(label not in labels_list):
-                labels_list.append(label)
-    return labels_list
-
-
+#create array with all labels and dates
 def create_aux():
     processed_data = []
     for issue in data['repos']['rstudio/shiny']['issues']:
@@ -56,32 +43,22 @@ def create_aux():
                     }
                     m +=1
                     processed_data.append(dict_label)
-    # print(processed_data)
     return processed_data
 
+#join labels in the same date
 def join_qtd(processed_data):
     processed_data_with_qtd = []
-    for label in processed_data:
+    for label in processed_data: #get all the different labels 
         if label not in processed_data_with_qtd:
             processed_data_with_qtd.append(label)
-    for label in processed_data:
+    for label in processed_data: #join the equal labels, adding the qtd
         for l in processed_data_with_qtd:
             if(l['name'] == label['name'] and l['year'] == label['year'] and l['month'] == label['month']):
                 l['qtd'] += 1
-    # for l in processed_data_with_qtd:
-    #     l['qtd'] -=1
-
-    print(processed_data_with_qtd)
-
-
-def populate_sheet():
-    year = []
-    for issues in data['repos']['rstudio/shiny']['issues']:
-        date = issues['created_at']
-        if(date[:4] not in year):
-            year.append(date[:4])
-    year.sort()
-
+    return processed_data_with_qtd
 
 p = create_aux()
-join_qtd(p)
+x = join_qtd(p)
+
+with open('../data/processed_github_data.json', 'w') as outfile:
+    json.dump(x, outfile)

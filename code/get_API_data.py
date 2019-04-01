@@ -20,6 +20,7 @@ for repo_name in repos:
     issues = repo.get_issues(state="all")
 
     for i in issues:
+        print(i)
         issue = repo.get_issue(i.number)
         iss = {
             "name": issue.raw_data['title'],
@@ -33,7 +34,6 @@ for repo_name in repos:
             iss['labels'].append(label['name'])
         d['repos'][repo_name]['issues'].append(iss)
 
-print(d)
 
-with open('data_github.json', 'w') as outfile:
+with open('../data/data_github.json', 'w') as outfile:
     json.dump(d, outfile)
