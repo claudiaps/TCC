@@ -12,7 +12,7 @@
 ```
 $ pip3 install PyGithub
 ```
-- Para plotar a visualização é importante instalar a biblioteca [*streamgraph*](https://github.com/hrbrmstr/streamgraph)  para a linguagem R. Instruções de instalação da biblioteca streamgraph usando a biblioteca devtools (https://hrbrmstr.github.io/streamgraph).
+- Para plotar a visualização é importante instalar a biblioteca [*streamgraph*](https://github.com/hrbrmstr/streamgraph)  para a linguagem R. Instruções de instalação da biblioteca *streamgraph* usando a biblioteca *devtools* (https://hrbrmstr.github.io/streamgraph).
 
 
 ## Execução 
