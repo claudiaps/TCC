@@ -12,14 +12,14 @@
 ```
 $ pip3 install PyGithub
 ```
-- Para plotar a visualização é importante instalar a biblioteca [*streamgraph*](https://github.com/hrbrmstr/streamgraph)  para a linguagem R
+- Para plotar a visualização é importante instalar a biblioteca [*streamgraph*](https://github.com/hrbrmstr/streamgraph)  para a linguagem R. Instruções de instalação da biblioteca streamgraph usando a biblioteca devtools (https://hrbrmstr.github.io/streamgraph).
 
 
 ## Execução 
 
 - O primeiro arquivo a ser executado é o *get_API_data.py*. Este é responsável por fazer as requisições para a API do GitHub e coletar as informações sobre as *issues* de determinado repositório. 
-    - Para mudar o repositório, basta alterar na linha 4. **Importante**, este campo deve ser no formato *'nome_dono/nome_repo'*
-- Após a coleta dos dados do GitHub, deve ser executado o arquivo *get_aux_json;py*, o qual gera um arquivo json intermediário para facilitar o preenchimento da tabela em formato *CSV*
+    - Para mudar o repositório, basta alterar na linha 5. **Importante**, este campo deve ser no formato *'nome_dono/nome_repo'*
+- Após a coleta dos dados do GitHub, deve ser executado o arquivo *get_aux_json.py*, o qual gera um arquivo json intermediário para facilitar o preenchimento da tabela em formato *CSV*
 - Com isso, basta executar o arquivo *get_sheet.py*, o qual irá gerar a tabela em *CSV*
 - Para plotar a visualização é necessário executar o arquivo *script.R*
 
