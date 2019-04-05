@@ -22,9 +22,9 @@ $ pip3 install PyGithub
 - Após a coleta dos dados do GitHub, deve ser executado o arquivo *get_aux_json;py*, o qual gera um arquivo json intermediário para facilitar o preenchimento da tabela em formato *CSV*
 - Com isso, basta executar o arquivo *get_sheet.py*, o qual irá gerar a tabela em *CSV*
 - Para plotar a visualização é necessário executar o arquivo *script.R*
+- As visualizações geradas estão na pasta *results*
 
 ## Observações
 
 - A princípio o código está com alguns problemas para pegar informações de mais de um repositório ao mesmo tempo. Esses são:
-    - Número máximo de requests permitidos pela API do GitHub
     - Pendência na adaptação dos outros 2 arquivos de código intermediários para tal funcionalidade

@@ -1,1 +1,1316 @@
-[{"name": "Invalid", "year": 2019, "month": 3, "qtd": 1}, {"name": "Difficulty: Intermediate", "year": 2019, "month": 3, "qtd": 9}, {"name": "Effort: Low", "year": 2019, "month": 3, "qtd": 22}, {"name": "Priority: Low", "year": 2019, "month": 3, "qtd": 25}, {"name": "Type: Enhancement", "year": 2019, "month": 3, "qtd": 18}, {"name": "Type: Question", "year": 2019, "month": 3, "qtd": 10}, {"name": "Feature: Bookmarking", "year": 2019, "month": 3, "qtd": 4}, {"name": "Priority: High", "year": 2019, "month": 3, "qtd": 4}, {"name": "Type: Regression", "year": 2019, "month": 3, "qtd": 3}, {"name": "Difficulty: Advanced", "year": 2019, "month": 3, "qtd": 10}, {"name": "Priority: Medium", "year": 2019, "month": 3, "qtd": 9}, {"name": "Type: Bug", "year": 2019, "month": 3, "qtd": 14}, {"name": "Difficulty: Novice", "year": 2019, "month": 2, "qtd": 11}, {"name": "Difficulty: Novice", "year": 2019, "month": 3, "qtd": 11}, {"name": "Effort: Low", "year": 2019, "month": 2, "qtd": 21}, {"name": "Priority: Low", "year": 2019, "month": 2, "qtd": 24}, {"name": "Type: Bug", "year": 2019, "month": 2, "qtd": 13}, {"name": "Type: Enhancement", "year": 2019, "month": 2, "qtd": 17}, {"name": "Priority: Medium", "year": 2019, "month": 2, "qtd": 8}, {"name": "Docs", "year": 2019, "month": 2, "qtd": 4}, {"name": "Docs", "year": 2019, "month": 3, "qtd": 4}, {"name": "Feature: Bookmarking", "year": 2019, "month": 2, "qtd": 3}, {"name": "Priority: High", "year": 2019, "month": 2, "qtd": 3}, {"name": "Type: Regression", "year": 2019, "month": 2, "qtd": 2}, {"name": "Difficulty: Advanced", "year": 2019, "month": 2, "qtd": 9}, {"name": "Type: Question", "year": 2019, "month": 1, "qtd": 9}, {"name": "Type: Question", "year": 2019, "month": 2, "qtd": 9}, {"name": "Feature: Bookmarking", "year": 2019, "month": 1, "qtd": 2}, {"name": "Priority: High", "year": 2019, "month": 1, "qtd": 2}, {"name": "Type: Regression", "year": 2019, "month": 1, "qtd": 1}, {"name": "Type: Shiny Server", "year": 2019, "month": 1, "qtd": 1}, {"name": "Type: Shiny Server", "year": 2019, "month": 2, "qtd": 1}, {"name": "Type: Shiny Server", "year": 2019, "month": 3, "qtd": 1}, {"name": "Difficulty: Intermediate", "year": 2019, "month": 1, "qtd": 8}, {"name": "Difficulty: Intermediate", "year": 2019, "month": 2, "qtd": 8}, {"name": "Effort: Low", "year": 2019, "month": 1, "qtd": 18}, {"name": "Priority: Low", "year": 2019, "month": 1, "qtd": 21}, {"name": "Type: Enhancement", "year": 2019, "month": 1, "qtd": 15}, {"name": "Type: Question", "year": 2018, "month": 12, "qtd": 7}, {"name": "Docs", "year": 2018, "month": 11, "qtd": 3}, {"name": "Docs", "year": 2018, "month": 12, "qtd": 3}, {"name": "Docs", "year": 2019, "month": 1, "qtd": 3}, {"name": "Type: Question", "year": 2018, "month": 11, "qtd": 5}, {"name": "Effort: Low", "year": 2018, "month": 11, "qtd": 18}, {"name": "Effort: Low", "year": 2018, "month": 12, "qtd": 16}, {"name": "Priority: Low", "year": 2018, "month": 11, "qtd": 19}, {"name": "Priority: Low", "year": 2018, "month": 12, "qtd": 19}, {"name": "Type: Enhancement", "year": 2018, "month": 11, "qtd": 13}, {"name": "Type: Enhancement", "year": 2018, "month": 12, "qtd": 13}, {"name": "Type: Bug", "year": 2018, "month": 11, "qtd": 13}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 11, "qtd": 8}, {"name": "Priority: Medium", "year": 2018, "month": 11, "qtd": 8}, {"name": "Difficulty: Advanced", "year": 2018, "month": 11, "qtd": 8}, {"name": "Difficulty: Advanced", "year": 2018, "month": 12, "qtd": 8}, {"name": "Difficulty: Advanced", "year": 2019, "month": 1, "qtd": 8}, {"name": "Effort: High", "year": 2018, "month": 11, "qtd": 3}, {"name": "Effort: High", "year": 2018, "month": 12, "qtd": 3}, {"name": "Effort: High", "year": 2019, "month": 1, "qtd": 3}, {"name": "Effort: High", "year": 2019, "month": 2, "qtd": 3}, {"name": "Effort: High", "year": 2019, "month": 3, "qtd": 3}, {"name": "Type: Bug", "year": 2018, "month": 12, "qtd": 11}, {"name": "Type: Bug", "year": 2019, "month": 1, "qtd": 10}, {"name": "Docs", "year": 2018, "month": 10, "qtd": 3}, {"name": "Difficulty: Advanced", "year": 2018, "month": 10, "qtd": 9}, {"name": "Effort: Medium", "year": 2018, "month": 10, "qtd": 9}, {"name": "Effort: Medium", "year": 2018, "month": 11, "qtd": 7}, {"name": "Effort: Medium", "year": 2018, "month": 12, "qtd": 7}, {"name": "Effort: Medium", "year": 2019, "month": 1, "qtd": 7}, {"name": "Effort: Medium", "year": 2019, "month": 2, "qtd": 7}, {"name": "Effort: Medium", "year": 2019, "month": 3, "qtd": 7}, {"name": "Priority: Low", "year": 2018, "month": 10, "qtd": 17}, {"name": "Type: Question", "year": 2018, "month": 9, "qtd": 8}, {"name": "Difficulty: Advanced", "year": 2018, "month": 9, "qtd": 11}, {"name": "Effort: Low", "year": 2018, "month": 9, "qtd": 21}, {"name": "Need Info", "year": 2018, "month": 9, "qtd": 1}, {"name": "Type: Question", "year": 2018, "month": 8, "qtd": 7}, {"name": "Difficulty: Advanced", "year": 2018, "month": 8, "qtd": 12}, {"name": "Effort: Medium", "year": 2018, "month": 8, "qtd": 9}, {"name": "Effort: Medium", "year": 2018, "month": 9, "qtd": 8}, {"name": "Priority: High", "year": 2018, "month": 8, "qtd": 5}, {"name": "Priority: High", "year": 2018, "month": 9, "qtd": 4}, {"name": "Priority: High", "year": 2018, "month": 10, "qtd": 2}, {"name": "Effort: High", "year": 2018, "month": 8, "qtd": 2}, {"name": "Effort: High", "year": 2018, "month": 9, "qtd": 2}, {"name": "Effort: High", "year": 2018, "month": 10, "qtd": 2}, {"name": "Priority: Medium", "year": 2018, "month": 8, "qtd": 10}, {"name": "Priority: Medium", "year": 2018, "month": 9, "qtd": 9}, {"name": "Priority: Medium", "year": 2018, "month": 10, "qtd": 7}, {"name": "Priority: Medium", "year": 2018, "month": 12, "qtd": 7}, {"name": "Priority: Medium", "year": 2019, "month": 1, "qtd": 6}, {"name": "Type: Enhancement", "year": 2018, "month": 8, "qtd": 14}, {"name": "Type: Enhancement", "year": 2018, "month": 9, "qtd": 14}, {"name": "Type: Enhancement", "year": 2018, "month": 10, "qtd": 12}, {"name": "Difficulty: Novice", "year": 2018, "month": 8, "qtd": 10}, {"name": "Difficulty: Novice", "year": 2018, "month": 9, "qtd": 10}, {"name": "Difficulty: Novice", "year": 2018, "month": 10, "qtd": 9}, {"name": "Difficulty: Novice", "year": 2018, "month": 11, "qtd": 9}, {"name": "Difficulty: Novice", "year": 2018, "month": 12, "qtd": 9}, {"name": "Difficulty: Novice", "year": 2019, "month": 1, "qtd": 9}, {"name": "Effort: Low", "year": 2018, "month": 8, "qtd": 21}, {"name": "Effort: Low", "year": 2018, "month": 10, "qtd": 15}, {"name": "Priority: Low", "year": 2018, "month": 8, "qtd": 18}, {"name": "Priority: Low", "year": 2018, "month": 9, "qtd": 18}, {"name": "Type: Bug", "year": 2018, "month": 8, "qtd": 11}, {"name": "Type: Bug", "year": 2018, "month": 9, "qtd": 10}, {"name": "Type: Bug", "year": 2018, "month": 10, "qtd": 10}, {"name": "Docs", "year": 2018, "month": 8, "qtd": 3}, {"name": "Docs", "year": 2018, "month": 9, "qtd": 3}, {"name": "Difficulty: Advanced", "year": 2018, "month": 7, "qtd": 9}, {"name": "Effort: Medium", "year": 2018, "month": 7, "qtd": 7}, {"name": "Priority: Medium", "year": 2018, "month": 7, "qtd": 9}, {"name": "Type: Shiny Server", "year": 2018, "month": 7, "qtd": 2}, {"name": "Type: Question", "year": 2018, "month": 7, "qtd": 6}, {"name": "Effort: Low", "year": 2018, "month": 7, "qtd": 19}, {"name": "Priority: High", "year": 2018, "month": 7, "qtd": 4}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 7, "qtd": 10}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 8, "qtd": 10}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 9, "qtd": 10}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 10, "qtd": 7}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 12, "qtd": 7}, {"name": "Priority: Low", "year": 2018, "month": 7, "qtd": 16}, {"name": "Type: Enhancement", "year": 2018, "month": 7, "qtd": 12}, {"name": "Priority: High", "year": 2018, "month": 11, "qtd": 1}, {"name": "Priority: High", "year": 2018, "month": 12, "qtd": 1}, {"name": "Type: Bug", "year": 2018, "month": 7, "qtd": 10}, {"name": "Difficulty: Novice", "year": 2018, "month": 6, "qtd": 9}, {"name": "Difficulty: Novice", "year": 2018, "month": 7, "qtd": 8}, {"name": "Docs", "year": 2018, "month": 6, "qtd": 2}, {"name": "Docs", "year": 2018, "month": 7, "qtd": 2}, {"name": "Effort: Low", "year": 2018, "month": 6, "qtd": 18}, {"name": "Priority: Medium", "year": 2018, "month": 6, "qtd": 8}, {"name": "Priority: Low", "year": 2018, "month": 6, "qtd": 19}, {"name": "Type: Bug", "year": 2018, "month": 6, "qtd": 13}, {"name": "Type: Question", "year": 2018, "month": 6, "qtd": 6}, {"name": "Type: Question", "year": 2018, "month": 10, "qtd": 3}, {"name": "Type: Enhancement", "year": 2018, "month": 6, "qtd": 11}, {"name": "Type: Shiny Server", "year": 2018, "month": 6, "qtd": 1}, {"name": "Type: Shiny Server", "year": 2018, "month": 8, "qtd": 1}, {"name": "Type: Shiny Server", "year": 2018, "month": 9, "qtd": 1}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 6, "qtd": 12}, {"name": "Effort: Medium", "year": 2018, "month": 6, "qtd": 6}, {"name": "Help Wanted", "year": 2018, "month": 6, "qtd": 1}, {"name": "Help Wanted", "year": 2018, "month": 7, "qtd": 1}, {"name": "Help Wanted", "year": 2018, "month": 8, "qtd": 1}, {"name": "Help Wanted", "year": 2018, "month": 9, "qtd": 1}, {"name": "Help Wanted", "year": 2018, "month": 10, "qtd": 1}, {"name": "Help Wanted", "year": 2018, "month": 11, "qtd": 1}, {"name": "Help Wanted", "year": 2018, "month": 12, "qtd": 1}, {"name": "Help Wanted", "year": 2019, "month": 1, "qtd": 1}, {"name": "Help Wanted", "year": 2019, "month": 2, "qtd": 1}, {"name": "Help Wanted", "year": 2019, "month": 3, "qtd": 1}, {"name": "Difficulty: Advanced", "year": 2018, "month": 6, "qtd": 4}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 5, "qtd": 10}, {"name": "Effort: Low", "year": 2018, "month": 5, "qtd": 13}, {"name": "Priority: Medium", "year": 2018, "month": 5, "qtd": 5}, {"name": "Type: Enhancement", "year": 2018, "month": 5, "qtd": 8}, {"name": "Difficulty: Novice", "year": 2018, "month": 5, "qtd": 6}, {"name": "Docs", "year": 2018, "month": 5, "qtd": 1}, {"name": "Priority: Low", "year": 2018, "month": 5, "qtd": 12}, {"name": "Difficulty: Advanced", "year": 2018, "month": 5, "qtd": 1}, {"name": "Effort: High", "year": 2018, "month": 5, "qtd": 1}, {"name": "Effort: High", "year": 2018, "month": 6, "qtd": 1}, {"name": "Effort: High", "year": 2018, "month": 7, "qtd": 1}, {"name": "Effort: Medium", "year": 2018, "month": 5, "qtd": 3}, {"name": "Type: Bug", "year": 2018, "month": 5, "qtd": 10}, {"name": "Priority: High", "year": 2018, "month": 5, "qtd": 1}, {"name": "Priority: High", "year": 2018, "month": 6, "qtd": 1}, {"name": "Type: Question", "year": 2018, "month": 5, "qtd": 1}, {"name": "Difficulty: Novice", "year": 2018, "month": 4, "qtd": 3}, {"name": "Effort: Low", "year": 2018, "month": 4, "qtd": 6}, {"name": "Priority: Low", "year": 2018, "month": 4, "qtd": 7}, {"name": "Type: Bug", "year": 2018, "month": 4, "qtd": 8}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 4, "qtd": 4}, {"name": "Type: Enhancement", "year": 2018, "month": 4, "qtd": 2}, {"name": "Difficulty: Novice", "year": 2018, "month": 3, "qtd": 1}, {"name": "Effort: Low", "year": 2018, "month": 3, "qtd": 2}, {"name": "Priority: Low", "year": 2018, "month": 3, "qtd": 3}, {"name": "Type: Bug", "year": 2018, "month": 3, "qtd": 5}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 2, "qtd": 2}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 3, "qtd": 2}, {"name": "Effort: Low", "year": 2018, "month": 2, "qtd": 1}, {"name": "Priority: Low", "year": 2018, "month": 2, "qtd": 2}, {"name": "Type: Bug", "year": 2018, "month": 2, "qtd": 4}, {"name": "Difficulty: Intermediate", "year": 2018, "month": 1, "qtd": 1}, {"name": "Effort: Medium", "year": 2018, "month": 1, "qtd": 1}, {"name": "Effort: Medium", "year": 2018, "month": 2, "qtd": 1}, {"name": "Effort: Medium", "year": 2018, "month": 3, "qtd": 1}, {"name": "Effort: Medium", "year": 2018, "month": 4, "qtd": 1}, {"name": "Priority: Low", "year": 2018, "month": 1, "qtd": 1}, {"name": "Type: Bug", "year": 2018, "month": 1, "qtd": 3}, {"name": "Priority: Medium", "year": 2017, "month": 8, "qtd": 1}, {"name": "Priority: Medium", "year": 2017, "month": 9, "qtd": 1}, {"name": "Priority: Medium", "year": 2017, "month": 10, "qtd": 1}, {"name": "Priority: Medium", "year": 2017, "month": 11, "qtd": 1}, {"name": "Priority: Medium", "year": 2017, "month": 12, "qtd": 1}, {"name": "Priority: Medium", "year": 2018, "month": 1, "qtd": 2}, {"name": "Priority: Medium", "year": 2018, "month": 2, "qtd": 2}, {"name": "Priority: Medium", "year": 2018, "month": 3, "qtd": 2}, {"name": "Priority: Medium", "year": 2018, "month": 4, "qtd": 1}, {"name": "Type: Bug", "year": 2017, "month": 8, "qtd": 1}, {"name": "Type: Bug", "year": 2017, "month": 9, "qtd": 1}, {"name": "Type: Bug", "year": 2017, "month": 10, "qtd": 1}, {"name": "Type: Bug", "year": 2017, "month": 11, "qtd": 1}, {"name": "Type: Bug", "year": 2017, "month": 12, "qtd": 1}]
+[
+    {
+        "name": "Invalid",
+        "year": 2019,
+        "month": 3,
+        "qtd": 1
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2019,
+        "month": 3,
+        "qtd": 9
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2019,
+        "month": 4,
+        "qtd": 9
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2019,
+        "month": 3,
+        "qtd": 22
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2019,
+        "month": 4,
+        "qtd": 22
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2019,
+        "month": 3,
+        "qtd": 25
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2019,
+        "month": 4,
+        "qtd": 25
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2019,
+        "month": 3,
+        "qtd": 18
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2019,
+        "month": 4,
+        "qtd": 18
+    },
+    {
+        "name": "Type: Question",
+        "year": 2019,
+        "month": 3,
+        "qtd": 10
+    },
+    {
+        "name": "Feature: Bookmarking",
+        "year": 2019,
+        "month": 3,
+        "qtd": 4
+    },
+    {
+        "name": "Priority: High",
+        "year": 2019,
+        "month": 3,
+        "qtd": 4
+    },
+    {
+        "name": "Type: Regression",
+        "year": 2019,
+        "month": 3,
+        "qtd": 3
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2019,
+        "month": 3,
+        "qtd": 10
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2019,
+        "month": 4,
+        "qtd": 10
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2019,
+        "month": 3,
+        "qtd": 9
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2019,
+        "month": 4,
+        "qtd": 9
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2019,
+        "month": 3,
+        "qtd": 14
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2019,
+        "month": 4,
+        "qtd": 14
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2019,
+        "month": 2,
+        "qtd": 11
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2019,
+        "month": 3,
+        "qtd": 11
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2019,
+        "month": 4,
+        "qtd": 11
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2019,
+        "month": 2,
+        "qtd": 21
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2019,
+        "month": 2,
+        "qtd": 24
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2019,
+        "month": 2,
+        "qtd": 13
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2019,
+        "month": 2,
+        "qtd": 17
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2019,
+        "month": 2,
+        "qtd": 8
+    },
+    {
+        "name": "Docs",
+        "year": 2019,
+        "month": 2,
+        "qtd": 4
+    },
+    {
+        "name": "Docs",
+        "year": 2019,
+        "month": 3,
+        "qtd": 4
+    },
+    {
+        "name": "Docs",
+        "year": 2019,
+        "month": 4,
+        "qtd": 3
+    },
+    {
+        "name": "Feature: Bookmarking",
+        "year": 2019,
+        "month": 2,
+        "qtd": 3
+    },
+    {
+        "name": "Priority: High",
+        "year": 2019,
+        "month": 2,
+        "qtd": 3
+    },
+    {
+        "name": "Type: Regression",
+        "year": 2019,
+        "month": 2,
+        "qtd": 2
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2019,
+        "month": 2,
+        "qtd": 9
+    },
+    {
+        "name": "Type: Question",
+        "year": 2019,
+        "month": 1,
+        "qtd": 9
+    },
+    {
+        "name": "Type: Question",
+        "year": 2019,
+        "month": 2,
+        "qtd": 9
+    },
+    {
+        "name": "Type: Question",
+        "year": 2019,
+        "month": 4,
+        "qtd": 4
+    },
+    {
+        "name": "Feature: Bookmarking",
+        "year": 2019,
+        "month": 1,
+        "qtd": 2
+    },
+    {
+        "name": "Priority: High",
+        "year": 2019,
+        "month": 1,
+        "qtd": 2
+    },
+    {
+        "name": "Type: Regression",
+        "year": 2019,
+        "month": 1,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Shiny Server",
+        "year": 2019,
+        "month": 1,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Shiny Server",
+        "year": 2019,
+        "month": 2,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Shiny Server",
+        "year": 2019,
+        "month": 3,
+        "qtd": 1
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2019,
+        "month": 1,
+        "qtd": 8
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2019,
+        "month": 2,
+        "qtd": 8
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2019,
+        "month": 1,
+        "qtd": 18
+    },
+    {
+        "name": "Feature: Bookmarking",
+        "year": 2019,
+        "month": 4,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2019,
+        "month": 1,
+        "qtd": 21
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2019,
+        "month": 1,
+        "qtd": 15
+    },
+    {
+        "name": "Type: Question",
+        "year": 2018,
+        "month": 12,
+        "qtd": 7
+    },
+    {
+        "name": "Docs",
+        "year": 2018,
+        "month": 11,
+        "qtd": 3
+    },
+    {
+        "name": "Docs",
+        "year": 2018,
+        "month": 12,
+        "qtd": 3
+    },
+    {
+        "name": "Docs",
+        "year": 2019,
+        "month": 1,
+        "qtd": 3
+    },
+    {
+        "name": "Type: Question",
+        "year": 2018,
+        "month": 11,
+        "qtd": 5
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 11,
+        "qtd": 18
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 12,
+        "qtd": 16
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 11,
+        "qtd": 19
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 12,
+        "qtd": 19
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2018,
+        "month": 11,
+        "qtd": 13
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2018,
+        "month": 12,
+        "qtd": 13
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 11,
+        "qtd": 13
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 11,
+        "qtd": 8
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 11,
+        "qtd": 8
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2018,
+        "month": 11,
+        "qtd": 8
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2018,
+        "month": 12,
+        "qtd": 8
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2019,
+        "month": 1,
+        "qtd": 8
+    },
+    {
+        "name": "Effort: High",
+        "year": 2018,
+        "month": 11,
+        "qtd": 3
+    },
+    {
+        "name": "Effort: High",
+        "year": 2018,
+        "month": 12,
+        "qtd": 3
+    },
+    {
+        "name": "Effort: High",
+        "year": 2019,
+        "month": 1,
+        "qtd": 3
+    },
+    {
+        "name": "Effort: High",
+        "year": 2019,
+        "month": 2,
+        "qtd": 3
+    },
+    {
+        "name": "Effort: High",
+        "year": 2019,
+        "month": 3,
+        "qtd": 3
+    },
+    {
+        "name": "Effort: High",
+        "year": 2019,
+        "month": 4,
+        "qtd": 3
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 12,
+        "qtd": 11
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2019,
+        "month": 1,
+        "qtd": 10
+    },
+    {
+        "name": "Docs",
+        "year": 2018,
+        "month": 10,
+        "qtd": 3
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2018,
+        "month": 10,
+        "qtd": 9
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 10,
+        "qtd": 9
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 11,
+        "qtd": 7
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 12,
+        "qtd": 7
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2019,
+        "month": 1,
+        "qtd": 7
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2019,
+        "month": 2,
+        "qtd": 7
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2019,
+        "month": 3,
+        "qtd": 7
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2019,
+        "month": 4,
+        "qtd": 7
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 10,
+        "qtd": 17
+    },
+    {
+        "name": "Type: Question",
+        "year": 2018,
+        "month": 9,
+        "qtd": 8
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2018,
+        "month": 9,
+        "qtd": 11
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 9,
+        "qtd": 21
+    },
+    {
+        "name": "Need Info",
+        "year": 2018,
+        "month": 9,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Question",
+        "year": 2018,
+        "month": 8,
+        "qtd": 7
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2018,
+        "month": 8,
+        "qtd": 12
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 8,
+        "qtd": 9
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 9,
+        "qtd": 8
+    },
+    {
+        "name": "Priority: High",
+        "year": 2018,
+        "month": 8,
+        "qtd": 5
+    },
+    {
+        "name": "Priority: High",
+        "year": 2018,
+        "month": 9,
+        "qtd": 4
+    },
+    {
+        "name": "Priority: High",
+        "year": 2018,
+        "month": 10,
+        "qtd": 2
+    },
+    {
+        "name": "Effort: High",
+        "year": 2018,
+        "month": 8,
+        "qtd": 2
+    },
+    {
+        "name": "Effort: High",
+        "year": 2018,
+        "month": 9,
+        "qtd": 2
+    },
+    {
+        "name": "Effort: High",
+        "year": 2018,
+        "month": 10,
+        "qtd": 2
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 8,
+        "qtd": 10
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 9,
+        "qtd": 9
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 10,
+        "qtd": 7
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 12,
+        "qtd": 7
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2019,
+        "month": 1,
+        "qtd": 6
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2018,
+        "month": 8,
+        "qtd": 14
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2018,
+        "month": 9,
+        "qtd": 14
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2018,
+        "month": 10,
+        "qtd": 12
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2018,
+        "month": 8,
+        "qtd": 10
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2018,
+        "month": 9,
+        "qtd": 10
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2018,
+        "month": 10,
+        "qtd": 9
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2018,
+        "month": 11,
+        "qtd": 9
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2018,
+        "month": 12,
+        "qtd": 9
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2019,
+        "month": 1,
+        "qtd": 9
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 8,
+        "qtd": 21
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 10,
+        "qtd": 15
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 8,
+        "qtd": 18
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 9,
+        "qtd": 18
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 8,
+        "qtd": 11
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 9,
+        "qtd": 10
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 10,
+        "qtd": 10
+    },
+    {
+        "name": "Docs",
+        "year": 2018,
+        "month": 8,
+        "qtd": 3
+    },
+    {
+        "name": "Docs",
+        "year": 2018,
+        "month": 9,
+        "qtd": 3
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2018,
+        "month": 7,
+        "qtd": 9
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 7,
+        "qtd": 7
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 7,
+        "qtd": 9
+    },
+    {
+        "name": "Type: Shiny Server",
+        "year": 2018,
+        "month": 7,
+        "qtd": 2
+    },
+    {
+        "name": "Type: Question",
+        "year": 2018,
+        "month": 7,
+        "qtd": 6
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 7,
+        "qtd": 19
+    },
+    {
+        "name": "Priority: High",
+        "year": 2018,
+        "month": 7,
+        "qtd": 4
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 7,
+        "qtd": 10
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 8,
+        "qtd": 10
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 9,
+        "qtd": 10
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 10,
+        "qtd": 7
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 12,
+        "qtd": 7
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 7,
+        "qtd": 16
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2018,
+        "month": 7,
+        "qtd": 12
+    },
+    {
+        "name": "Priority: High",
+        "year": 2018,
+        "month": 11,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: High",
+        "year": 2018,
+        "month": 12,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: High",
+        "year": 2019,
+        "month": 4,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 7,
+        "qtd": 10
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2018,
+        "month": 6,
+        "qtd": 9
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2018,
+        "month": 7,
+        "qtd": 8
+    },
+    {
+        "name": "Docs",
+        "year": 2018,
+        "month": 6,
+        "qtd": 2
+    },
+    {
+        "name": "Docs",
+        "year": 2018,
+        "month": 7,
+        "qtd": 2
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 6,
+        "qtd": 18
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 6,
+        "qtd": 8
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 6,
+        "qtd": 19
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 6,
+        "qtd": 13
+    },
+    {
+        "name": "Type: Question",
+        "year": 2018,
+        "month": 6,
+        "qtd": 6
+    },
+    {
+        "name": "Type: Question",
+        "year": 2018,
+        "month": 10,
+        "qtd": 3
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2018,
+        "month": 6,
+        "qtd": 11
+    },
+    {
+        "name": "Type: Shiny Server",
+        "year": 2018,
+        "month": 6,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Shiny Server",
+        "year": 2018,
+        "month": 8,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Shiny Server",
+        "year": 2018,
+        "month": 9,
+        "qtd": 1
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 6,
+        "qtd": 12
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 6,
+        "qtd": 6
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2018,
+        "month": 6,
+        "qtd": 1
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2018,
+        "month": 7,
+        "qtd": 1
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2018,
+        "month": 8,
+        "qtd": 1
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2018,
+        "month": 9,
+        "qtd": 1
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2018,
+        "month": 10,
+        "qtd": 1
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2018,
+        "month": 11,
+        "qtd": 1
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2018,
+        "month": 12,
+        "qtd": 1
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2019,
+        "month": 1,
+        "qtd": 1
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2019,
+        "month": 2,
+        "qtd": 1
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2019,
+        "month": 3,
+        "qtd": 1
+    },
+    {
+        "name": "Help Wanted",
+        "year": 2019,
+        "month": 4,
+        "qtd": 1
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2018,
+        "month": 6,
+        "qtd": 4
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 5,
+        "qtd": 10
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 5,
+        "qtd": 13
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 5,
+        "qtd": 5
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2018,
+        "month": 5,
+        "qtd": 8
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2018,
+        "month": 5,
+        "qtd": 6
+    },
+    {
+        "name": "Docs",
+        "year": 2018,
+        "month": 5,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 5,
+        "qtd": 12
+    },
+    {
+        "name": "Difficulty: Advanced",
+        "year": 2018,
+        "month": 5,
+        "qtd": 1
+    },
+    {
+        "name": "Effort: High",
+        "year": 2018,
+        "month": 5,
+        "qtd": 1
+    },
+    {
+        "name": "Effort: High",
+        "year": 2018,
+        "month": 6,
+        "qtd": 1
+    },
+    {
+        "name": "Effort: High",
+        "year": 2018,
+        "month": 7,
+        "qtd": 1
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 5,
+        "qtd": 3
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 5,
+        "qtd": 10
+    },
+    {
+        "name": "Priority: High",
+        "year": 2018,
+        "month": 5,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: High",
+        "year": 2018,
+        "month": 6,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Question",
+        "year": 2018,
+        "month": 5,
+        "qtd": 1
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2018,
+        "month": 4,
+        "qtd": 3
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 4,
+        "qtd": 6
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 4,
+        "qtd": 7
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 4,
+        "qtd": 9
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 4,
+        "qtd": 4
+    },
+    {
+        "name": "Type: Enhancement",
+        "year": 2018,
+        "month": 4,
+        "qtd": 2
+    },
+    {
+        "name": "Difficulty: Novice",
+        "year": 2018,
+        "month": 3,
+        "qtd": 1
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 3,
+        "qtd": 2
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 3,
+        "qtd": 3
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 3,
+        "qtd": 5
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 2,
+        "qtd": 2
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 3,
+        "qtd": 2
+    },
+    {
+        "name": "Effort: Low",
+        "year": 2018,
+        "month": 2,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 2,
+        "qtd": 2
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 2,
+        "qtd": 4
+    },
+    {
+        "name": "Difficulty: Intermediate",
+        "year": 2018,
+        "month": 1,
+        "qtd": 1
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 1,
+        "qtd": 1
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 2,
+        "qtd": 1
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 3,
+        "qtd": 1
+    },
+    {
+        "name": "Effort: Medium",
+        "year": 2018,
+        "month": 4,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: Low",
+        "year": 2018,
+        "month": 1,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2018,
+        "month": 1,
+        "qtd": 3
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2017,
+        "month": 8,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2017,
+        "month": 9,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2017,
+        "month": 10,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2017,
+        "month": 11,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2017,
+        "month": 12,
+        "qtd": 1
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 1,
+        "qtd": 2
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 2,
+        "qtd": 2
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 3,
+        "qtd": 2
+    },
+    {
+        "name": "Priority: Medium",
+        "year": 2018,
+        "month": 4,
+        "qtd": 2
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2017,
+        "month": 8,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2017,
+        "month": 9,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2017,
+        "month": 10,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2017,
+        "month": 11,
+        "qtd": 1
+    },
+    {
+        "name": "Type: Bug",
+        "year": 2017,
+        "month": 12,
+        "qtd": 1
+    }
+]
