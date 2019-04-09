@@ -2,14 +2,16 @@ from github import Github
 import json
 import time
 
-repos = ['rstudio/shiny', 'Microsoft/vscode']  # owner and repo name
+repos = ['nextcloud/server']  # owner and repo name
 
 d = {
     "repos": {}
 }
 
+tokens =  ['771d2b6c6cc9d069a72c1c8f13d7ac6f5e5c58c6', 'fd843f724af35901b19c4818f5a474068c528e58']
+token_indice = 0
 # using username and password
-g = Github("claudiaps", "jpk0mgt10")
+g = Github(tokens[token_indice])
 
 
 def get_data():
@@ -25,8 +27,8 @@ def get_data():
         issues = repo.get_issues(state="all")
         treat_requests_number(g.rate_limiting[0])
         for i in issues:
-            print(g.rate_limiting[0])
             issue = repo.get_issue(i.number)
+            print(g.rate_limiting[0], issue)
             treat_requests_number(g.rate_limiting[0])
             iss = {
                 "name": issue.raw_data['title'],
@@ -47,11 +49,12 @@ def get_data():
 
 
 def treat_requests_number(number):
-    if (number == 10):
-        print('Número de requisições prestes a exceder. Um contador se iniciará, após 1hr o código voltará a executar normalmente de onde este parou')
-        time.sleep(3600)
-        print('Retomando a execução')
-        number = 0
+    global token_indice
+    global g
+    global tokens
+    if (number == 5):
+        token_indice += 1
+        g = Github(tokens[token_indice])
     return number
 
 

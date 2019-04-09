@@ -14,7 +14,10 @@ def diff_month(d1, d2):
 #create array with all labels and dates
 def create_aux():
     processed_data = []
-    for issue in data['repos']['rstudio/shiny']['issues']:
+    repo_name = ""
+    for i in data['repos']:
+        repo_name = i
+    for issue in data['repos'][repo_name]['issues']:
         if(len(issue['labels']) > 0):
             created_date = issue['created_at']
             closed_date = issue['closed_at']
@@ -56,6 +59,10 @@ def join_qtd(processed_data):
             if(l['name'] == label['name'] and l['year'] == label['year'] and l['month'] == label['month']):
                 l['qtd'] += 1
     return processed_data_with_qtd
+
+# def join_similar_labels(processed_data):
+#     for label in processed_data:
+
 
 p = create_aux()
 x = join_qtd(p)
