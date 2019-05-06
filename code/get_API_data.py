@@ -2,7 +2,7 @@ from github import Github
 import json
 import time
 
-repos = ['nextcloud/server']  # owner and repo name
+repos = ['rstudio/shiny']  # owner and repo name
 
 d = {
     "repos": {}
@@ -75,7 +75,7 @@ def get_data():
         except:
             flag = True
 
-    with open('../data/data_github.json', 'w') as outfile:
+    with open('../data/data_github_shiny.json', 'w') as outfile:
         json.dump(d, outfile)
 
 

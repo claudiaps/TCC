@@ -8,7 +8,7 @@ import io
 
 
 def create_file(row):
-    with open('../data/csv_label_data.csv', 'w') as file:
+    with open('../data/csv_label_data_shiny.csv', 'w') as file:
         wr = csv.writer(file, quoting=csv.QUOTE_ALL)
         wr.writerow(['name', 'year', 'qtd'])
         for row in row:
@@ -18,7 +18,7 @@ def create_file(row):
 def get_labels_year():
     list_labels = []
     years = []
-    with open('../data/processed_github_data.json') as f:
+    with open('../data/processed_github_data_shiny.json') as f:
         data = json.load(f)
     for i in data:
         if(i['name'] not in list_labels):
@@ -54,7 +54,7 @@ def populate_sheet(labels, years):
             cont = cont + 1
             row.append(copy.copy(aux))
 
-    with open('../data/processed_github_data.json') as f:
+    with open('../data/processed_github_data_shiny.json') as f:
         data = json.load(f)
 
     teste = 0
