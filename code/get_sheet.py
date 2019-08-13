@@ -26,7 +26,6 @@ def get_labels_year():
         if(i['year'] not in years):
             years.append(int(i['year']))
     years.sort()
-    
     return list_labels, years
 
 

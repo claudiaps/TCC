@@ -2,14 +2,13 @@ from github import Github
 import json
 import time
 
-repos = ['rstudio/shiny']  # owner and repo name
+repos = ['nextcloud/server']  # owner and repo name
 
 d = {
     "repos": {}
 }
 
-tokens = ['fe7fcade9517281d5df2c15c34b1025a2dc117e1',
-          'c182bd8fc09dc3ecc450d85459a68420c4ca0789', '771d2b6c6cc9d069a72c1c8f13d7ac6f5e5c58c6']
+tokens = ['7c262c81d42dab7f0e94c2be6745a64176009e10', 'e9342f8b22062fed28023334a786dbb81a8aa676', '69b60039acaf5583b58657284ef3cc4de6dfe04a']
 token_indice = 0
 # using username and password
 g = Github(tokens[token_indice])
@@ -75,7 +74,7 @@ def get_data():
         except:
             flag = True
 
-    with open('../data/data_github_shiny.json', 'w') as outfile:
+    with open('../data/data_github_nextCloud_updated.json', 'w') as outfile:
         json.dump(d, outfile)
 
 
