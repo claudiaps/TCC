@@ -4,7 +4,7 @@ import json
 from datetime import datetime
 
 #open json file
-with open('../data/data_github_shiny.json') as f:
+with open('../data/data_github_nextCloud_updated.json') as f:
     data = json.load(f)
 
 #find the months between two dates
@@ -67,5 +67,5 @@ def join_qtd(processed_data):
 p = create_aux()
 x = join_qtd(p)
 
-with open('../data/processed_github_data_shiny.json', 'w') as outfile:
+with open('../data/new_nextCloud.json', 'w') as outfile:
     json.dump(x, outfile)

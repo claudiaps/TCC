@@ -7,7 +7,7 @@ library(streamgraph)
 
 data <- read.csv(file="/home/claudiasampedro/Documentos/7_periodo/TCC/TCC-1/data/csv_label_data.csv", head=TRUE, sep=",")
 
-
+dat
 # Create data:
 # year=teste$year
 # name=teste$name
