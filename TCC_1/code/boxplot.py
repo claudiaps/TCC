@@ -1,6 +1,6 @@
 import plotly.graph_objects as go
 import csv
-import numpy as np 
+
 
 file_csv =  open('../data/csv_label_data.csv', 'r')
 readCSV = csv.reader(file_csv)
