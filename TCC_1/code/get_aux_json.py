@@ -18,19 +18,18 @@ def create_aux():
     for i in data['repos']:
         repo_name = i
     for issue in data['repos'][repo_name]['issues']:
+        created_date = issue['created_at']
+        closed_date = issue['closed_at']
+        created_year = int(created_date[:4])
+        created_month = int(created_date[5: - (len(created_date)-7)])
+        if(closed_date):
+            closed_year = int(closed_date[:4])
+            closed_month = int(closed_date[5: - (len(created_date)-7)])
+        else:
+            closed_year = datetime.now().year
+            closed_month = datetime.now().month
+        months = diff_month(datetime(closed_year, closed_month, 1), datetime(created_year, created_month, 1))
         if(len(issue['labels']) > 0):
-            created_date = issue['created_at']
-            closed_date = issue['closed_at']
-            created_year = int(created_date[:4])
-            created_month = int(created_date[5: - (len(created_date)-7)])
-            if(closed_date):
-                closed_year = int(closed_date[:4])
-                closed_month = int(closed_date[5: - (len(created_date)-7)])
-            else:
-                closed_year = datetime.now().year
-                closed_month = datetime.now().month
-            months = diff_month(datetime(closed_year, closed_month, 1), datetime(
-                created_year, created_month, 1))
             for label in issue['labels']:
                 m = created_month
                 y = created_year
@@ -46,6 +45,21 @@ def create_aux():
                     }
                     m +=1
                     processed_data.append(dict_label)
+        else:
+            m = created_month
+            y = created_year
+            for i in range(0, months+1):
+                if(m > 12):
+                    m = 1
+                    y = created_year + 1
+                dict_label = {
+                    'name': "noLabel",
+                    'year': y,
+                    'month': m,
+                    'qtd': 0
+                }
+                m +=1
+                processed_data.append(dict_label)
     return processed_data
 
 #join labels in the same date
@@ -57,6 +71,7 @@ def join_qtd(processed_data):
     for label in processed_data: #join the equal labels, adding the qtd
         for l in processed_data_with_qtd:
             if(l['name'] == label['name'] and l['year'] == label['year'] and l['month'] == label['month']):
+                print(l['name'])
                 l['qtd'] += 1
     return processed_data_with_qtd
 
@@ -67,5 +82,5 @@ def join_qtd(processed_data):
 p = create_aux()
 x = join_qtd(p)
 
-with open('../data/new_nextCloud.json', 'w') as outfile:
+with open('../data/new_nextCloud2.json', 'w') as outfile:
     json.dump(x, outfile)
