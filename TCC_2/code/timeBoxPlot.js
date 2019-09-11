@@ -63,7 +63,7 @@ function getLabelsFrequency(issues) {
 function getCloseTime(createdAt, closedAt) {
     const created = moment(createdAt, "YYYY-MM-DD HH:mm:ss");
     const closed = moment(closedAt, "YYYY-MM-DD HH:mm:ss");
-    return closed.diff(created, 'seconds')
+    return closed.diff(created, 'days')
 }
 
 function getBoxPlotArray(labels) {
