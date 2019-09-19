@@ -1,4 +1,4 @@
-// var gexf = require('gexf');
+var gexf = require('gexf');
 
 function openFile() {
     return require('../data/data_github_nextCloud_updated.json');
@@ -73,23 +73,23 @@ function getEdges(file) {
     edges.push(e);
     issues.forEach(issue => {
 
-        if (issue.labels.length > 2) {
+        if (issue.labels.length >= 2) {
             numberLabels = issue.labels.length;
 
             for (let i = 0; i < numberLabels; i++) {
                 for (let j = i + 1; j < numberLabels; j++) {
                     let lbSource = issue.labels[i]
                     let lbTarget = issue.labels[j]
-                    let starLen = edges.length
+                    let foundEdge = false;
 
                     edges.forEach((edge, index) => {
                         if ((edge.source === lbSource && edge.target === lbTarget) || (edge.target === lbSource && edge.source === lbTarget)) {
                             edge.weight += 1
+                            foundEdge = true;
                         }
                     })
 
-                    let secondLen = edges.length
-                    if(starLen != secondLen || secondLen === 1){
+                    if(!foundEdge){
                         idEdge += 1;
                         e = {
                             id: idEdge,
@@ -99,6 +99,7 @@ function getEdges(file) {
                         }
                         edges.push(e);
                     }
+
                 }
                 // while (j < numberLabels) {
                 //     lbSource = issue.labels[i]
@@ -132,17 +133,21 @@ function getEdges(file) {
 const file = openFile();
 const nodesFrequency = getNodesFrequency(file);
 const edges = getEdges(file);
-console.log(edges)
 
-// var myGexf = gexf.create();
+var myGexf = gexf.create();
 
-// nodesFrequency.forEach(node => {
-//     myGexf.addNode(node);
-// })
+nodesFrequency.forEach(node => {
+    myGexf.addNode(node);
+})
 
-// var doc = myGexf.document;
-// var fs = require('fs');
-// fs.writeFile('newfile.gexf', doc, function (err) {
-//     if (err) throw err;
-//     console.log('File is created successfully.');
-// });
+edges.forEach(edge => {
+    myGexf.addEdge(edge)
+})
+
+
+var doc = myGexf.document;
+var fs = require('fs');
+fs.writeFile('newfile.gexf', doc, function (err) {
+    if (err) throw err;
+    console.log('File is created successfully.');
+});
