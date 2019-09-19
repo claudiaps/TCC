@@ -1,4 +1,4 @@
-var gexf = require('gexf');
+// var gexf = require('gexf');
 
 function openFile() {
     return require('../data/data_github_nextCloud_updated.json');
@@ -63,44 +63,65 @@ function getEdges(file) {
     let idEdge = 0;
 
     e = {
-        id: 0,
+        id: idEdge,
         source: 0,
         target: 0,
         weight: 1,
     }
-    edges.push(e);
 
+    let sameIndex = null;
+    edges.push(e);
     issues.forEach(issue => {
 
         if (issue.labels.length > 2) {
-            let j;
             numberLabels = issue.labels.length;
 
             for (let i = 0; i < numberLabels; i++) {
-                j = i + 1;
+                for (let j = i + 1; j < numberLabels; j++) {
+                    let lbSource = issue.labels[i]
+                    let lbTarget = issue.labels[j]
+                    let starLen = edges.length
 
-                while (j < numberLabels) {
-                    lbSource = issue.labels[i]
-                    lbTarget = issue.labels[j]
-
-                    edges.forEach(edge => {
-                        if ((edge.source === lbSource || edge.target === lbSource) && (edge.source === lbTarget || edge.target === lbTarget)) {
-                            edge.weight += 1;
-                        }
-
-                        else {
-                            e = {
-                                id: idEdge,
-                                source: lbSource,
-                                target: lbTarget,
-                                weight: 1,
-                            }
-                            edges.push(e);
-                            idEdge += 1;
+                    edges.forEach((edge, index) => {
+                        if ((edge.source === lbSource && edge.target === lbTarget) || (edge.target === lbSource && edge.source === lbTarget)) {
+                            edge.weight += 1
                         }
                     })
-                    j += 1;
+
+                    let secondLen = edges.length
+                    if(starLen != secondLen || secondLen === 1){
+                        idEdge += 1;
+                        e = {
+                            id: idEdge,
+                            source: lbSource,
+                            target: lbTarget,
+                            weight: 1,
+                        }
+                        edges.push(e);
+                    }
                 }
+                // while (j < numberLabels) {
+                //     lbSource = issue.labels[i]
+                //     lbTarget = issue.labels[j]
+
+                //     edges.forEach(edge => {
+                //         if ((edge.source === lbSource || edge.target === lbSource) && (edge.source === lbTarget || edge.target === lbTarget)) {
+                //             edge.weight += 1;
+                //         }
+
+                //         else {
+                //             e = {
+                // id: idEdge,
+                // source: lbSource,
+                // target: lbTarget,
+                //                 weight: 1,
+                //             }
+                //             edges.push(e);
+                //             idEdge += 1;
+                //         }
+                //     })
+                //     j += 1;
+                // }
             }
         }
     })
@@ -113,7 +134,7 @@ const nodesFrequency = getNodesFrequency(file);
 const edges = getEdges(file);
 console.log(edges)
 
-var myGexf = gexf.create();
+// var myGexf = gexf.create();
 
 // nodesFrequency.forEach(node => {
 //     myGexf.addNode(node);
