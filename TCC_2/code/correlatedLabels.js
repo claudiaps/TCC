@@ -4,12 +4,28 @@ function openFile() {
     return require('../data/data_github_nextCloud_updated.json');
 }
 
-function getNodes(file) {
-    const { repos } = file;
+function getFeatures(issues) {
 
-    const { nextcloud: repoName } = repos;
-    const { issues } = repoName;
+    issues.forEach(issue => {
+        if(issue.labels.length > 0){
+            let labelToRemove;
+            issue.labels.forEach((label, index) => {
+                if(label.toLowerCase().includes('feature')){
+                    const newLabels = label.split(':')
+                    labelToRemove = index;
+                    newLabels.forEach(newLabel => {
+                        issue.labels.push(newLabel)
+                    })
+                }
+            })
+            issue.labels.splice(labelToRemove, labelToRemove)
+        }
+    })
+    return issues
+}
 
+
+function getNodes(issues) {
     const labels = [];
     const labels_formated = [];
 
@@ -20,7 +36,7 @@ function getNodes(file) {
                     labels.push(label);
                     labels_formated.push({
                         id: label,
-                        name: label,
+                        label: label,
                         viz: {
                             size: 0
                         }
@@ -32,13 +48,9 @@ function getNodes(file) {
     return labels_formated;
 }
 
-function getNodesFrequency(file) {
+function getNodesFrequency(issues) {
 
-    const { repos } = file;
-    const { nextcloud: repoName } = repos;
-    const { issues } = repoName;
-
-    let labels = getNodes(file)
+    let labels = getNodes(issues)
     issues.forEach(issue => {
         if (issue.labels.length > 0) {
             issue.labels.forEach(label => {
@@ -53,11 +65,7 @@ function getNodesFrequency(file) {
     return labels;
 }
 
-function getEdges(file) {
-
-    const { repos } = file;
-    const { nextcloud: repoName } = repos;
-    const { issues } = repoName;
+function getEdges(issues) {
 
     const edges = [];
     let idEdge = 0;
@@ -101,28 +109,6 @@ function getEdges(file) {
                     }
 
                 }
-                // while (j < numberLabels) {
-                //     lbSource = issue.labels[i]
-                //     lbTarget = issue.labels[j]
-
-                //     edges.forEach(edge => {
-                //         if ((edge.source === lbSource || edge.target === lbSource) && (edge.source === lbTarget || edge.target === lbTarget)) {
-                //             edge.weight += 1;
-                //         }
-
-                //         else {
-                //             e = {
-                // id: idEdge,
-                // source: lbSource,
-                // target: lbTarget,
-                //                 weight: 1,
-                //             }
-                //             edges.push(e);
-                //             idEdge += 1;
-                //         }
-                //     })
-                //     j += 1;
-                // }
             }
         }
     })
@@ -131,8 +117,14 @@ function getEdges(file) {
 }
 
 const file = openFile();
-const nodesFrequency = getNodesFrequency(file);
-const edges = getEdges(file);
+const { repos } = file;
+
+const { nextcloud: repoName } = repos;
+const { issues } = repoName;
+// const issuesFormated = getFeatures(issues); 
+
+const nodesFrequency = getNodesFrequency(issues);
+const edges = getEdges(issues);
 
 var myGexf = gexf.create();
 
