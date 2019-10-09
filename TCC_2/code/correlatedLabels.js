@@ -8,19 +8,18 @@ function getFeatures(issues) {
 
     issues.forEach(issue => {
         if(issue.labels.length > 0){
-            let labelToRemove;
             issue.labels.forEach((label, index) => {
-                if(label.toLowerCase().includes('feature')){
+                if(label.includes('feature:')){
                     const newLabels = label.split(':')
-                    labelToRemove = index;
+                    issue.labels.splice(index, index)
                     newLabels.forEach(newLabel => {
                         issue.labels.push(newLabel)
                     })
                 }
             })
-            issue.labels.splice(labelToRemove, labelToRemove)
         }
     })
+    console.log(issues)
     return issues
 }
 
@@ -37,7 +36,7 @@ function getNodes(issues) {
                     labels_formated.push({
                         id: label,
                         label: label,
-                        viz: {
+                        attributes: {
                             size: 0
                         }
                     })
@@ -56,7 +55,7 @@ function getNodesFrequency(issues) {
             issue.labels.forEach(label => {
                 labels.forEach(lb => {
                     if (label === lb.id) {
-                        lb.viz.size += 1;
+                        lb.attributes.size += 1;
                     }
                 })
             });
@@ -121,12 +120,22 @@ const { repos } = file;
 
 const { nextcloud: repoName } = repos;
 const { issues } = repoName;
-// const issuesFormated = getFeatures(issues); 
+const issuesFormated = getFeatures(issues); 
 
-const nodesFrequency = getNodesFrequency(issues);
-const edges = getEdges(issues);
+const nodesFrequency = getNodesFrequency(issuesFormated);
+const edges = getEdges(issuesFormated);
 
-var myGexf = gexf.create();
+const model  = {
+    node : [
+        {
+            id: 'size',
+            type: 'integer',
+            title: "Size", 
+        }
+    ]
+}
+
+var myGexf = gexf.create(node = model.node);
 
 nodesFrequency.forEach(node => {
     myGexf.addNode(node);
