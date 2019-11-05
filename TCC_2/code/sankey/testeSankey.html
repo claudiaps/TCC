@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+    <script type="text/javascript">
+        google.charts.load('current', { 'packages': ['sankey'] });
+        google.charts.setOnLoadCallback(drawChart);
+
+        function drawChart() {
+            var data = new google.visualization.DataTable();
+            data.addColumn('string', 'From');
+            data.addColumn('string', 'To');
+            data.addColumn('number', 'Weight');
+            data.addRows([
+                ['bug', '0-1 comments', 5580],
+                ['bug', '12+ comments', 1043],
+                ['needs info', '0-1 comments', 721],
+                ['enhancement', '0-1 comments', 2962],
+                ['enhancement', '12+ comments', 455],
+                ['0-1 comments', '801+ days', 7894],
+                ['12+ comments', '801+ days', 1478],
+                ['0-1 comments', '200 days', 896],
+                ['12+ comments', '200 days', 8]
+            ]);
+
+            // Sets chart options.
+            var options = {
+                width: 600,
+            };
+
+            // Instantiates and draws our chart, passing in some options.
+            var chart = new google.visualization.Sankey(document.getElementById('sankey_basic'));
+            chart.draw(data, options);
+        }
+    </script>
+</head>
+
+<body>
+    <div id="sankey_basic" style="width: 900px; height: 300px;"></div>
+</body>
+
+</html>
