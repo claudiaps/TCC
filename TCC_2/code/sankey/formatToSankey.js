@@ -1,25 +1,39 @@
 var moment = require('moment');
-var axios = require('axios');
-const auth = ['1066d78af373ce87064da896e8ac8ce981783215', '839673a4314b5aa46c511105e57a7bef6c5320e2', '5a30071f59ebaae4fa34e9bde6a6e24ce204df69', '76dae6711eb65e5c58f0c3997125576b9ff25e38'];
 
 function openFile() {
     return require('../../data/githubDataNextCloud.json');
 }
 
+function getComments() {
+    const file = require('./comments.json');
+    const { repos } = file;
+    const { nextcloud: repoName } = repos;
+    const { issues } = repoName;
+    return issues;
+}
+
+function getPrs() {
+    const file = require('./pullRequests.json');
+    const { repos } = file;
+    const { nextcloud: repoName } = repos;
+    const { issues } = repoName;
+    return issues;
+}
+
 const selectedLabels = ['bug', 'enhancement', 'needs info']
 let sankeyVector = []
 
-function saveJson(issues) {
-    const array = []
-    issues.forEach(issue => {
-        array.push(issue.id)
-    })
-    var arrayString = JSON.stringify(array)
-    var fs = require('fs');
-    fs.writeFile("./issuesWithSelectedLabels.json", arrayString, function(err, result) {
-        if(err) console.log('error', err);
-    });
-}
+// function saveJson(issues) {
+//     const array = []
+//     issues.forEach(issue => {
+//         array.push(issue.id)
+//     })
+//     var arrayString = JSON.stringify(array)
+//     var fs = require('fs');
+//     fs.writeFile("./issuesWithSelectedLabels.json", arrayString, function (err, result) {
+//         if (err) console.log('error', err);
+//     });
+// }
 
 function unionEntries(entries) {
     const entriesFormated = entries.reduce((acc, dataAtual) => {
@@ -97,7 +111,6 @@ function getSankeySecondNode(issues) {
         sankeyLine = [label_comments, label_time, 1]
         aux.push(sankeyLine)
     })
-
     unionEntries(aux);
 
 }
@@ -111,76 +124,54 @@ function getCloseTime(createdAt, closedAt) {
 function getSankeyThirdNode(issues) {
 
     const aux = []
-    let tokenPosition = 0
-    let contToken = 0
-    let source = null;
 
     issues.forEach(issue => {
-
         const time = getCloseTime(issue.created_at, issue.closed_at)
+        let sankeyLine;
         let source;
+        let target = undefined;
         if (time >= 200) source = '200 days'
         else if (time >= 400) source = '400 days'
         else if (time >= 600) source = '600 days'
         else if (time >= 800) source = '800 days'
         else source = '801+ days'
 
-        let sankeyLine;
-        let target = undefined;
-        if (contToken > 4500) {
-            tokenPosition++;
-        }
-        axios.get(`https://api.github.com/repos/nextcloud/server/pulls/${issue.id}`, {
-            headers: { Authorization: `token ${auth[tokenPosition]}` }
-        }).then(response => {
-            contToken++;
-            const { data } = response;
-            const { state } = data;
-            console.log(state)
-            target = state === 'open' ? 'PR Associado' : 'PR Aceito'
-        }).catch(ex => {
-            console.log('catch pr')
-            axios.get(`https://api.github.com/repos/nextcloud/server/issues/17760/comments`, {
-                headers: { Authorization: `token ${auth[tokenPosition]}` }
-            }).then(response => {
-                console.log('object')
-                // const { data } = response;
-                // target = processComments(data)
-                // sankeyLine = [source, target, '1']
-                // console.log(sankeyLine, issue.id)
-            }).catch(ex => {
-                console.log('#',ex.message)
-            })
-         })
-    })
-}
-
-function processComments(comments) {
-    const code = ''
-    if (data.length) {
-        let stringsComments = ''
-        comments.forEach(comment => {
-            stringsComments = stringsComments.concat(comment.body)
+        prs.forEach(pr => {
+            if(pr.id === issue.id){
+                target = `PR ${pr.state}`
+            }
         })
-        if (stringsComments.includes('`')) {
-            code = 'has code'
-            return code;
+        
+        if(!target){
+            comments.forEach(comment => {
+                if(comment.id === issue.id){
+                    comment.comments.forEach(c => {
+                        if(c.includes('`')){
+                            target = 'Code in comments'
+                        }
+                    })
+                }
+                if(!target){
+                    target = `No code in comments`
+                }
+            })
         }
-        code = 'has comments';
-        return code;
-    }
-    code = 'without comments'
-    return code;
+        sankeyLine=[source, target, 1]
+        aux.push(sankeyLine)
+    })
 
+    unionEntries(aux);
 }
 
 const file = openFile();
+const comments = getComments();
+const prs = getPrs();
 const { repos } = file;
 const { nextcloud: repoName } = repos;
 const { issues } = repoName;
 const selectedIssues = getIssuesWithLabels(issues)
-saveJson(selectedIssues)
-// getSankeyFirstNode(selectedIssues);
-// getSankeySecondNode(selectedIssues);
-// getSankeyThirdNode(selectedIssues);
-// console.log(sankeyVector)
+getSankeyFirstNode(selectedIssues);
+getSankeySecondNode(selectedIssues);
+getSankeyThirdNode(selectedIssues);
+// saveJson(selectedIssues)
+console.log(sankeyVector)

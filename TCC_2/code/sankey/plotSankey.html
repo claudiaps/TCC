@@ -11,17 +11,26 @@
             data.addColumn('string', 'From');
             data.addColumn('string', 'To');
             data.addColumn('number', 'Weight');
-            data.addRows([
-                ['bug', '0-1 comments', 5580],
-                ['bug', '12+ comments', 1043],
-                ['needs info', '0-1 comments', 721],
-                ['enhancement', '0-1 comments', 2962],
-                ['enhancement', '12+ comments', 455],
-                ['0-1 comments', '801+ days', 7894],
-                ['12+ comments', '801+ days', 1478],
-                ['0-1 comments', '200 days', 896],
-                ['12+ comments', '200 days', 8]
-            ]);
+            data.addRows(
+                [
+                    ['bug', '0-1 comments', 5580],
+                    ['bug', '12+ comments', 1043],
+                    ['needs info', '0-1 comments', 721],
+                    ['enhancement', '0-1 comments', 2962],
+                    ['enhancement', '12+ comments', 455],
+                    ['0-1 comments', '801+ days', 7894],
+                    ['12+ comments', '801+ days', 1478],
+                    ['0-1 comments', '200 days', 896],
+                    ['12+ comments', '200 days', 8],
+                    ['801+ days', 'Code in comments', 1595],
+                    ['801+ days', 'No code in comments', 3680],
+                    ['801+ days', 'PR closed', 4045],
+                    ['801+ days', 'PR open', 52],
+                    ['200 days', 'Code in comments', 339],
+                    ['200 days', 'No code in comments', 532],
+                    ['200 days', 'PR closed', 33]
+                ]
+            );
 
             // Sets chart options.
             var options = {
