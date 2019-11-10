@@ -35,7 +35,7 @@ def get_data():
                 r = {
                     'issues': []
                 }
-                d['repos'][repo_name] = r
+                d['repos']['nextcloud'] = r
 
                 for issue_number in data:
                     try:
