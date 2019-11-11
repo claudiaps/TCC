@@ -105,7 +105,7 @@ function getSankeySecondNode(issues) {
         else label_time = '1001+ days'
         sankeyLine = [label_comments, label_time, 1]
         aux.push(sankeyLine)
-        console.log({time, label_time})
+        // console.log({time, label_time})
     })
     unionEntries(aux);
 
@@ -133,7 +133,7 @@ function getSankeyThirdNode(issues) {
 
         if(time === -1) source = 'not closed'
         else if(time <= 10 ) source = '0-10 days'
-        else if (time <= 200) source = '0-200 days'
+        else if (time <= 200) source = '1-200 days'
         else if (time <= 400) source = '201-400 days'
         else if (time <= 600) source = '401-600 days'
         else if (time <= 800) source = '601-800 days'
@@ -174,11 +174,16 @@ const { repos } = file;
 const { nextcloud: repoName } = repos;
 const { issues } = repoName;
 const selectedIssues = getIssuesWithLabels(issues)
-console.log(selectedIssues);
+// console.log(selectedIssues);
 
-saveJson(selectedIssues)
+// saveJson(selectedIssues)
 
-// getSankeyFirstNode(selectedIssues);
-// getSankeySecondNode(selectedIssues);
-// getSankeyThirdNode(selectedIssues);
+getSankeyFirstNode(selectedIssues);
+getSankeySecondNode(selectedIssues);
+getSankeyThirdNode(selectedIssues);
 // console.log(sankeyVector)
+var arrayString = JSON.stringify(sankeyVector)
+var fs = require('fs');
+fs.writeFile("./sankey.json", arrayString, function (err, result) {
+    if (err) console.log('error', err);
+});
