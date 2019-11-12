@@ -28,7 +28,7 @@ function getNumberComments(issues) {
 function saveJson(array) {
     var arrayString = JSON.stringify(array)
     var fs = require('fs');
-    fs.writeFile("../data/boxplotNumberComments.json", arrayString, function(err, result) {
+    fs.writeFile("./boxplotNumberComments.json", arrayString, function(err, result) {
         if(err) console.log('error', err);
     });
 }

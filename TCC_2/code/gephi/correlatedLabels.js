@@ -1,7 +1,7 @@
 var gexf = require('gexf');
 
 function openFile() {
-    return require('../data/data_github_nextCloud_updated.json');
+    return require('../../data/data_github_nextCloud_updated.json');
 }
 
 function getFeatures(issues) {
