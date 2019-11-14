@@ -8,7 +8,7 @@ fig = go.Figure()
 
 for row in data:
     print(row)
-    fig.add_trace(go.Box(y=grubbs.test(row['y'], alpha=0.05), name=row['name']))
+    fig.add_trace(go.Box(y=row['y'], name=row['name']))
 
 fig.show()
 
