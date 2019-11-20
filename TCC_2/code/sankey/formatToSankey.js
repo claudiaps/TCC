@@ -97,7 +97,7 @@ function getSankeySecondNode(issues) {
         let label_time;
         if(time === -1) label_time = 'not closed'
         else if(time <= 10 ) label_time = '0-10 days'
-        else if (time <= 200) label_time = '1-200 days'
+        else if (time <= 200) label_time = '11-200 days'
         else if (time <= 400) label_time = '201-400 days'
         else if (time <= 600) label_time = '401-600 days'
         else if (time <= 800) label_time = '601-800 days'
@@ -133,7 +133,7 @@ function getSankeyThirdNode(issues) {
 
         if(time === -1) source = 'not closed'
         else if(time <= 10 ) source = '0-10 days'
-        else if (time <= 200) source = '1-200 days'
+        else if (time <= 200) source = '11-200 days'
         else if (time <= 400) source = '201-400 days'
         else if (time <= 600) source = '401-600 days'
         else if (time <= 800) source = '601-800 days'

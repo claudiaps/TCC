@@ -37,7 +37,7 @@ function getNodes(issues) {
                         id: label,
                         label: label,
                         attributes: {
-                            size: 0
+                            weight: 0
                         }
                     })
                 }
@@ -55,7 +55,7 @@ function getNodesFrequency(issues) {
             issue.labels.forEach(label => {
                 labels.forEach(lb => {
                     if (label === lb.id) {
-                        lb.attributes.size += 1;
+                        lb.attributes.weight += 1;
                     }
                 })
             });
@@ -125,17 +125,15 @@ const issuesFormated = getFeatures(issues);
 const nodesFrequency = getNodesFrequency(issuesFormated);
 const edges = getEdges(issuesFormated);
 
-const model  = {
-    node : [
-        {
-            id: 'size',
-            type: 'integer',
-            title: "Size", 
-        }
-    ]
-}
+var myGexf = gexf.create();
 
-var myGexf = gexf.create(node = model.node);
+myGexf.setNodeModel([
+    {
+        id: 'weight',
+        type: 'integer',
+        title: 'Weight',
+    }
+])
 
 nodesFrequency.forEach(node => {
     myGexf.addNode(node);
