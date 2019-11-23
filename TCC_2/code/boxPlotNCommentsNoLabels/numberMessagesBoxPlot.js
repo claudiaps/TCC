@@ -10,7 +10,7 @@ function getClosedIssues() {
     const { issues } = repoName;
 
     return issues.filter(issue => {
-        if (issue.closed_at && issue.labels.length > 0) {
+        if (issue.closed_at && issue.labels.length === 0) {
             return true;
         }
     })
