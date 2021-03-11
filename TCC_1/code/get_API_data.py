@@ -8,7 +8,8 @@ d = {
     "repos": {}
 }
 
-tokens = ['7c262c81d42dab7f0e94c2be6745a64176009e10', 'e9342f8b22062fed28023334a786dbb81a8aa676', '69b60039acaf5583b58657284ef3cc4de6dfe04a']
+# insert your github token here
+tokens = []
 token_indice = 0
 # using username and password
 g = Github(tokens[token_indice])
